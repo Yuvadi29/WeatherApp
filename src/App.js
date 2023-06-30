@@ -1,12 +1,12 @@
-import React from 'react'
-import MainSection from './components/MainSection'
+import React from 'react';
+import MainSection from './components/MainSection';
 
 const App = () => {
   return (
-    <div>
+    <div className='h-screen flex justify-center items-center bg-[#141316]'>
       <MainSection />
     </div>
   )
 }
 
-export default App
+export default App;
