@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MiddleSection = () => {
+const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
     return (
         // main container 
         <div className="my-3 pb-3 w-[380px] bg-white rounded-xl font-changa flex flex-col justify-center items-center">
@@ -10,7 +10,8 @@ const MiddleSection = () => {
                 <div className="flex flex-col justify-center items-center">
                     {/* lat value  */}
                     <div className="text-[40px]">
-                        33.44
+                        {/* 33.44 */}
+                        {lat}
                     </div>
                     {/* lat  */}
                     <div className="mt-[-15px] text-[15px]">
@@ -21,7 +22,8 @@ const MiddleSection = () => {
                 <div className="ml-10 flex flex-col justify-center items-center">
                     {/* long value  */}
                     <div className="text-[40px]">
-                        -94.04
+                        {/* -94.04 */}
+                        {lon}
                     </div>
                     {/* long  */}
                     <div className="mt-[-15px] text-[15px]">
@@ -35,7 +37,8 @@ const MiddleSection = () => {
                 <div className="flex flex-col justify-center items-center">
                     {/* sunrise value  */}
                     <div className="text-[40px]">
-                        6:00
+                        {/* 6:00 */}
+                        {sunrise = new Date().getTime()}
                     </div>
                     {/* sunrise  */}
                     <div className="mt-[-15px] text-[15px]">
@@ -46,7 +49,8 @@ const MiddleSection = () => {
                 <div className="ml-10 flex flex-col justify-center items-center">
                     {/* sunset value  */}
                     <div className="text-[40px]">
-                        18:00
+                        {/* 18:00 */}
+                        {sunset}
                     </div>
                     {/* sunset  */}
                     <div className="mt-[-15px] text-[15px]">
