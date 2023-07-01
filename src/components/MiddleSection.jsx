@@ -70,27 +70,3 @@ const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
 }
 
 export default MiddleSection
-    // < div className = "" >
-    //     {/* sunrise  */ }
-    //     < div className = "" >
-    //         {/* sunrise value  */ }
-    //         < div className = "" >
-    //             6:00
-    //                 </ >
-    // {/* sunrise  */ }
-    // < div className = "" >
-    //     Sunrise
-    //                 </ >
-    //             </div >
-    // {/* sunset  */ }
-    // < div className = "" >
-    //     {/* sunset value  */ }
-    //     < div className = "" >
-    //         18:00
-    //                 </ >
-    // {/* sunset  */ }
-    // < div className = "" >
-    //     Sunset
-    //                 </ >
-    //             </div >
-    //         </div >
