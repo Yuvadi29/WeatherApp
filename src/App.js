@@ -24,6 +24,8 @@ const App = () => {
     }
   }
 
+  
+
   return (
     <div className='h-screen flex flex-col justify-center items-center bg-[#141316]'>
       <div className="mb-3 w-[500px] text-[25px] font-changa flex justify-between items-center">

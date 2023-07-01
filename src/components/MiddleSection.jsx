@@ -1,6 +1,13 @@
 import React from 'react'
 
 const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
+
+    const formatTime = (timestamp) => {
+        const date = new Date(timestamp * 1000);
+        const options = { hour: 'numeric', minute: 'numeric' };
+        return date.toLocaleTimeString([], options);
+      }
+    
     return (
         // main container 
         <div className="my-3 pb-3 w-[380px] bg-white rounded-xl font-changa flex flex-col justify-center items-center">
@@ -38,7 +45,7 @@ const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
                     {/* sunrise value  */}
                     <div className="text-[40px]">
                         {/* 6:00 */}
-                        {sunrise}
+                        {formatTime(sunrise)}
                     </div>
                     {/* sunrise  */}
                     <div className="mt-[-15px] text-[15px]">
@@ -50,7 +57,7 @@ const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
                     {/* sunset value  */}
                     <div className="text-[40px]">
                         {/* 18:00 */}
-                        {sunset}
+                        {formatTime(sunset)}
                     </div>
                     {/* sunset  */}
                     <div className="mt-[-15px] text-[15px]">
