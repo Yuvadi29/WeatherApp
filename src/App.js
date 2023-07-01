@@ -4,12 +4,8 @@ import MainSection from './components/MainSection';
 
 const App = () => {
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   const [weatherData, setWeatherData] = useState();
-  const [location, setLocation] = useState("Virar");
+  const [location, setLocation] = useState("");
 
   const fetchData = async () => {
 
@@ -26,8 +22,13 @@ const App = () => {
     }
   }
 
+  useEffect(() => {
+    fetchData();
+  });
+
   return (
-    <div className='h-screen flex justify-center items-center bg-[#141316]'>
+    <div className='h-screen flex flex-col justify-center items-center bg-[#141316]'>
+      <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
       <MainSection place={location} data={weatherData} />
     </div>
   )

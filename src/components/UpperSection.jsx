@@ -11,7 +11,6 @@ const UpperSection = ({ place, temp }) => {
         <div className="flex flex-col justify-center items-center">
             <div className="text-white text-[70px] text-center">
                 {/* place */}
-                {/* Mumbai */}
                 {place}
             </div>
             <div className="mt-[-85px] mb-[-65px] text-white text-[180px] text-center">

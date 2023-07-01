@@ -38,7 +38,7 @@ const MiddleSection = ({ lat, lon, sunrise, sunset }) => {
                     {/* sunrise value  */}
                     <div className="text-[40px]">
                         {/* 6:00 */}
-                        {sunrise = new Date().getTime()}
+                        {sunrise}
                     </div>
                     {/* sunrise  */}
                     <div className="mt-[-15px] text-[15px]">
